@@ -169,6 +169,10 @@ namespace ImGuiNET
 
         public static void EndCombo() => ImGuiNative.igEndCombo();
 
+        public static void BeginGroup() => ImGuiNative.igBeginGroup();
+        public static void EndGroup() => ImGuiNative.igEndGroup();
+
+
         public unsafe static bool Combo(string label, ref int current_item, string[] items)
         {
             return ImGuiNative.igCombo(label, ref current_item, items, items.Length, 5);
